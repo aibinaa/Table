@@ -38,15 +38,15 @@ input {
 }
 
 button {
-    background: #f4f4f4;
+    background: rgb(35, 52, 80);;
     font-size: 24px;
     font-weight: 100;
     border-radius: 5px;
-    width: 100px;
-    border: none;
+    width: 130px;
+    border: 1px solid rgb(35, 52, 80);;
     margin: 0 auto;
     height: 40px;
-    color: rgb(35, 52, 80);
+    color: white;
     cursor: pointer;
 }
 button:hover {

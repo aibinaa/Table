@@ -20,28 +20,29 @@ body {
 
 table {
     width: 100%;
-    /* width: 1200px; */
     overflow: scroll;
     word-break: break-all;
+    
     font-size: 14px;
     table-layout: fixed;
     border-collapse: collapse;
     border-radius: 50px;
 }
 
-/* table tbody {
-    height: 400px;
-    overflow: scroll;
-} */
-
 td {
     color: rgb(35, 52, 80);
+}
+
+th {
+    word-break:keep-all
 }
 
 td,
 th {
     width: fit-content;
     text-align: left;
+    /* min-width: 100px; */
+    width: 100%;
     height: 50px;
     padding: 10px 20px;
 }
@@ -76,20 +77,13 @@ tr:hover {
     background-color: #dedede;
 }
 
-img {
-    width: 30px;
+.avatarImg {
+    width: 60px;
+    border-radius: 50%;
 }
-
-/* a {
-    text-decoration: none;
-    color: rgb(35, 52, 80);
-    font-weight: bold;
-    vertical-align: baseline;
-} */
 
 a:hover {
     color: #373737;
-
 }
 
 .box {
@@ -99,19 +93,19 @@ a:hover {
     height: 50px;
     max-width: 1200px;
     width: 100%;
+    height: 70px;
+    gap: 20px;
+}
+
+.userbox, .searchbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .box img {
     width: 40px;
 }
-/* .userbox {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    background-color: #f6f6f6;
-    border: 3px solid rgb(233, 233, 233);
-    width: 180px;
-} */
 
 .userbox:hover {
     color: #295ebe;
@@ -127,12 +121,11 @@ input {
     border: 1px solid #607996;;
 }
 
-/* .deletebtn {
-    max-width: 80px;
-    width: 100%;
-    height: 30px;
-    background-color: #607996;
-    border: none;
-    color: white;
-    font-weight: bold;
-} */
+
+.delete, .edit, .newTh, .newTh2 {
+    width: 50px;
+}
+
+.editImg, .deleteImg {
+    width: 40px;
+}
